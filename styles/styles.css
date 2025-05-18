@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #707070;
+}
+
+.logo{
+    width: 120px;
+    grid-area: logo;
+}
+
+li, a, button{
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "logo menu ensena_en_doon";
+    align-items: center;
+    padding: 30px;
+}
+
+.ensena_en_doon{
+    grid-area: ensena_en_doon;
+    display: flex;
+    justify-content: right;
+}
+
+.menu{
+    list-style: none;
+    grid-area: menu;
+    display: flex;
+    justify-content: left;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a{
+    transition: all 0.3s ease 0s;
+    color: grey;
+}
+
+.menu li a:hover{
+    color: #F5911E;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: #707070;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #F5911E;
+}
+
+header{
+    background-color: #f2f2f2
+}
+
+.imagen_banner{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.banner{
+    background-color: #f2f2f2;
+    background: linear-gradient(#f2f2f2 70%, white 50%);
+    padding-bottom: 30px;
+}
+.titulares{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.banner .titulares h1{
+    padding: 0px 100px;
+}
+
+.banner .titulares p{
+    padding: 0px 0px 0px 100px;
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+.banner_video{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contenido_1{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_1 img{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.texto{
+    margin-left: 100px;
+}
+
+.contenido_1 h2{
+    font-size: 45px;
+}
+
+.contenido_2{
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_2 video{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contenido_2 h2{
+    font-size: 45px;
+}
+
+.contenedor_cursos{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_cursos article{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 15px;
+}
+
+.contenedor_cursos article h3{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.contenedor_cursos video{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.nuestra_historia h2{
+    font-size: 45px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.nuestra_historia article p{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+.items{
+    background-color:#f2f2f2;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.items div img{
+    width: 200px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.items div h3{
+    text-align: center;
+}
+
+.items div h4{
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.items2{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.items2 img{
+    display: block;
+    margin: 0 auto;
+}
+
+.items2 div{
+    padding: 100px;
+}
+
+.items2 div h2{
+    text-align: center;
+}
+
+.items2 div p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.cta{
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+.cta h2, p, button{
+    margin-bottom: 20px;
+}
+
+.contacto{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.contacto h1{
+    margin-bottom: 30px;
+}
+
+.contacto form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.boton_enviar{
+    padding: 9px 25px;
+    background-color: #707070;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: all 0.3s ease 0s;
+}
+
+.boton_enviar:hover{
+    background-color: #F5911E;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+footer li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+footer .rrss_spotify{
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: grey;
+}
+
+footer .rrss_spotify a{
+    color: #707070;
+}
+@media (max-width: 480px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    h1, h2, p{
+        text-align: center;
+    }
+
+    .banner, .contenido_1, .contenido_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulares{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner .titulares h1{
+        padding: 0;
+    }
+
+    .banner .titulares p{
+        padding: 0;
+    }
+
+    .banner .banner_video{
+        width: 90%;
+    }
+
+    .contenido_1 img{
+        width: 100%;
+    }
+
+    .contenido_1 .texto{
+        margin: 0;
+    }
+
+    .contenido_2 video{
+        width: 90%;
+    }
+
+    .contenido_2 .texto{
+        margin: 0;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner .imagen_banner{
+        width: 90%;
+    }
+
+    .contenedor_cursos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nuestra_historia .items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .items2{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .items2 div{
+        margin: 30px;
+        padding: 0;
+    }
+
+    footer section{
+        margin: 10px;
+    }
+}
