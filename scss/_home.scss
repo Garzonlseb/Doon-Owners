@@ -1,0 +1,105 @@
+main{
+    .banner{
+        background-color: #f2f2f2;
+        background: linear-gradient(#f2f2f2 70%, white 50%);
+        padding-bottom: 30px;
+    }
+    .titulares{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    .banner_video{
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    h1{
+        padding: 0px 100px;
+    }
+    p{
+        padding: 0px;
+    }
+    .contenido_1{
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .texto{
+        margin-left: 100px;
+        
+    }
+    .contenido_2{
+        background-color: #f2f2f2;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    video{
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    @include mobile{
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            padding: 0;
+        }
+        h2{
+            text-align: center;
+            padding: 0;
+        }
+        p{
+            text-align: center;
+            padding: 0;
+        }
+        .banner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contenido_1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contenido_2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .titulares{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner_video{
+            width: 90%;
+        }
+        .texto{
+            margin: 0;
+        }
+        video{
+            width: 90%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    li{
+        display: inline-block;
+        padding: 0px 20px;
+    }
+    .rrss_spotify{
+        padding: 10px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: grey;
+    }
+    a{
+        color: #707070;
+        text-decoration: none;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    section{
+        margin: 10px;
+    }
+}

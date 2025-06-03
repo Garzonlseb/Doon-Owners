@@ -1,0 +1,60 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "logo menu ensena_en_doon";
+    align-items: center;
+    padding: 30px;
+    background-color: #f2f2f2;
+    .logo{
+        width: 120px;
+        grid-area: logo;
+    }
+    .menu{
+        list-style: none;
+        grid-area: menu;
+        display: flex;
+        justify-content: left;
+    }
+    li{
+        display: inline-block;
+        padding: 0px 20px;
+        text-decoration: none;
+    }
+    a{
+        transition: all 0.3s ease 0s;
+        color: grey;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #f5911e;
+    }
+    button{
+        text-decoration: none;
+        padding: 9px 25px;
+        background-color: #707070;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transform: all 0.3s ease 0s;
+    }
+    button:hover{
+        background-color: #f5911e;
+    }
+    .ensena_en_doon{
+        grid-area: ensena_en_doon;
+        display: flex;
+        justify-content: right;
+    }
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+    }
+        .menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+    }
+}

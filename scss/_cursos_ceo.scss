@@ -1,0 +1,44 @@
+main{
+    .banner{
+        background-color: #f2f2f2;
+        background: linear-gradient(#f2f2f2 70%, white 50%);
+        padding-bottom: 30px;
+    }
+    .titulares{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    .contenedor_cursos{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .cursos{
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        margin: 15px;
+    }
+    h3{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    video{
+        width: 300px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    @include mobile{
+        .contenedor_cursos{
+            display: flex;
+            flex-direction: column;
+        }
+        .imagen_banner{
+            width: 90%;
+        }
+    }    
+}
