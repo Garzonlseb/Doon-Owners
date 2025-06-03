@@ -276,9 +276,18 @@ main .items {
   justify-content: center;
 }
 main .icono {
-  width: 200px;
+  width: 100px;
   border-radius: 10px;
   margin: 15px;
+  display: block;
+  margin: 0 auto;
+}
+main .icono1 {
+  width: 50px;
+  border-radius: 10px;
+  margin: 15px;
+  display: block;
+  margin: 0 auto;
 }
 main h3 {
   text-align: center;
@@ -293,6 +302,47 @@ main .items2 {
   padding: 10px;
   align-items: center;
   justify-content: center;
+}
+main div {
+  padding: 100px;
+}
+main h2 {
+  text-align: center;
+}
+main p {
+  text-align: center;
+  font-size: 15px;
+}
+main .cta {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+}
+main button {
+  text-decoration: none;
+  padding: 9px 25px;
+  background-color: #707070;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: all 0.3s ease 0s;
+}
+main button:hover {
+  background-color: #f5911e;
+}
+@media (max-width: 480px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .items2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
