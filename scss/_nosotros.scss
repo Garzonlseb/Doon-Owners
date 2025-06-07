@@ -34,4 +34,33 @@ main{
     .historia p{
         margin: 15px;
     }
+        @include mobile{
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div{
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            padding: 0;
+        }
+        h2{
+            text-align: center;
+            padding: 0;
+        }
+        p{
+            text-align: center;
+            padding: 0;
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 0px;
+        }
+    }
 }
